@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BogoSort</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-bogo " >
+
+            <h1>BogoSort</h1>
+
+            <div>
+                <label>Adicione números</label>
+                <div>
+                    <input type="text" class="input" name="number" id="number">
+                    <button class="btn" id='addButton'>Adicionar</button>
+                </div>
+            </div>
+
+            <div class="error" id="error"> </div>
+        </div>
+        
+            <div class="container-sort ">
+                <h3 id="info">A quantidade minima de números são 6, faltam 6 números para o BogoSort. </h3>
+
+                <div class="contador">
+                <h2>Duração</h2>
+                        <div class="cronometro">
+                            <span id="hours">00:00</span><span id="hundredths">.00</span>
+                        </div>
+                </div>
+               
+                
+                 <div id="result">
+                    <h2 class="success">BogoSort !!!</h2>
+                 </div> 
+ 
+                <div id="numbers">
+
+                
+                    
+                </div>
+                <div class="controllers">
+                    <button class="btn" id="orderBtn">Bogo!</button>
+                    <button class="btn" id="resetBtn">Reset</button>
+                </div>
+
+                <div class="error" id="bogo-error">
+                    Para rolar o BogoSort você deve ter pelo menos 6  números. 
+                </div>
+            </div>
+
+</div>
+    <script src="cronometro.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
